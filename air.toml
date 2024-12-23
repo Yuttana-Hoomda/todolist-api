@@ -1,0 +1,8 @@
+root = "."
+tmp_dir = "tmp"
+
+[build]
+bin = "main"     # Output binary path
+cmd = "go build -o tmp/main ." # Build command
+exclude = ["tmp/*", "client/*"]
+include = ["**/*.go"]
